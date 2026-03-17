@@ -1,0 +1,78 @@
+@import "../../../App.scss";
+
+.footer {
+  background: $gray-950;
+  padding: 4rem 0 3rem;
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__line {
+    height: 1px;
+    background: $gray-700;
+    margin: 2rem 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  &__col {
+    h4 {
+      text-transform: uppercase;
+      color: $gray-950;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    a {
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .footer {
+    text-align: center;
+
+    &__top {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

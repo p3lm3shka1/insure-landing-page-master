@@ -1,0 +1,39 @@
+@import "../../../App.scss";
+
+.cta {
+  padding-bottom: 9rem;
+
+  &__inner {
+    background: $blue-950;
+    color: $gray-50;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+      font-family: $font-heading;
+      font-size: clamp(2rem, 3vw, 3rem);
+      max-width: 500px;
+      margin: 0;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .cta__inner {
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 1.5rem;
+  }
+}

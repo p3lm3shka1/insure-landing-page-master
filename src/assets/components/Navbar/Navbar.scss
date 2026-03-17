@@ -1,0 +1,86 @@
+@import "../../../App.scss";
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: $gray-50;
+
+  &__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__desktop {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+
+    a {
+      text-transform: uppercase;
+      color: $gray-700;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+    }
+  }
+
+  &__toggle {
+    display: none;
+    border: none;
+    background: transparent;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: $bp-mobile) {
+  .navbar {
+    &__desktop {
+      display: none;
+    }
+    &__toggle {
+      display: block;
+    }
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    inset: 80px 0 auto 0;
+    min-height: calc(100vh - 80px);
+    background: $gray-950;
+    color: $gray-50;
+    overflow: hidden;
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 3rem 1.5rem;
+      position: relative;
+      z-index: 2;
+
+      a {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+      }
+    }
+
+    &__btn {
+      width: min(100%, 320px);
+    }
+    &__bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}

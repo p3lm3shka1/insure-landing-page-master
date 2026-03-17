@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  color: hsl(270, 9%, 17%);
+  background: hsl(0, 0%, 98%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  padding-bottom: 9rem;
+}
+.cta__inner {
+  background: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.cta__inner h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  max-width: 500px;
+  margin: 0;
+}
+.cta__bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .cta__inner {
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 1.5rem;
+  }
+}/*# sourceMappingURL=CTA.css.map */
