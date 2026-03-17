@@ -1,16 +1,89 @@
-# React + Vite
+# Frontend Mentor - Insure landing page solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Currently, two official plugins are available:
+A responsive landing page built with **React + Vite** based on the Insure design challenge.  
+The project includes a desktop and mobile layout, reusable UI components, SCSS styling, and deployment to GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+- **GitHub Pages:** https://p3lm3shka1.github.io/insure-landing-page-master/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (UI)
+- **SCSS (Sass)**
+- **JavaScript**
+
+---
+
+## Project Features
+
+- Responsive design for desktop and mobile screens
+- Reusable component-based architecture
+- Mobile navigation with menu toggle
+- Features section rendered from data
+- CTA (Call To Action) section
+- Footer with social links and grouped navigation columns
+
+---
+
+## Project Structure
+
+```text
+insure-landing-page-master/
+├─ public/
+├─ src/
+│  ├─ assets/
+│  │  ├─ components/
+│  │  │  ├─ Buttons/
+│  │  │  ├─ CTA/
+│  │  │  ├─ Features/
+│  │  │  ├─ Footer/
+│  │  │  ├─ Hero/
+│  │  │  ├─ Layout/
+│  │  │  └─ Navbar/
+│  │  ├─ Data/
+│  │  │  ├─ Features.js
+│  │  │  ├─ FooterLinks.js
+│  │  │  └─ NavLinks.js
+│  │  ├─ design/
+│  │  └─ images/
+│  ├─ style/
+│  │  └─ variables.scss
+│  ├─ App.jsx
+│  ├─ App.scss
+│  └─ main.jsx
+├─ vite.config.js
+├─ package.json
+└─ README.md
+```
+
+---
+
+## Main Components
+
+- **Navbar**: top navigation, mobile menu toggle
+- **Hero**: main headline, intro text, CTA button, adaptive image behavior
+- **Features**: feature cards generated from data
+- **CTA**: highlighted call-to-action block
+- **Footer**: logo, social icons, and grouped footer links
+- **Layout/Container**: shared layout wrapper
+- **Buttons**: reusable button styles/variants
+
+---
+
+## Notes
+
+- SCSS variables are centralized in `src/style/variables.scss`.
+- Data-driven sections are stored in `src/assets/Data/`.
+- If assets fail to load in production, verify relative paths and Vite `base` config.
+
+---
+
+## Author
+
+- GitHub: [p3lm3shka1](https://github.com/p3lm3shka1)
+- Frontend Mentor [p3lm3shka1](https://www.frontendmentor.io/profile/p3lm3shka1)
