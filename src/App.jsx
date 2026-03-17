@@ -3,6 +3,7 @@ import Hero from "./assets/components/Hero/Hero";
 import Features from "./assets/components/Features/Features";
 import CTA from "./assets/components/CTA/CTA";
 import Footer from "./assets/components/Footer/Footer";
+import Attribution from "./assets/components/Attribution/Attribution";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <CTA />
       </main>
       <Footer />
+      <Attribution />
     </>
   );
 }
