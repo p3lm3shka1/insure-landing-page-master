@@ -1,4 +1,4 @@
-@import "../../../App.scss";
+@import "../../../style/variables.scss";
 
 .cta {
   padding-bottom: 9rem;
@@ -26,6 +26,8 @@
     right: 0;
     top: 0;
     height: 100%;
+    pointer-events: none;
+    z-index: 999;
   }
 }
 

@@ -1,23 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
-// variables
-$blue-950: hsl(256, 26%, 20%);
-$blue-500: hsl(216, 30%, 68%);
-$gray-950: hsl(270, 9%, 17%);
-$gray-700: hsl(273, 4%, 51%);
-$gray-50: hsl(0, 0%, 98%);
-
-$font-heading: "DM Serif Display", serif;
-$font-body: "Karla", sans-serif;
-
-$spacing-0-5: 0.5rem;
-$spacing-1: 1rem;
-$spacing-1-5: 1.5rem;
-$spacing-2: 2rem;
-$spacing-2-5: 2.5rem;
-
-$bp-tablet: 992px;
-$bp-mobile: 768px;
+@import "./style/variables";
 
 //resets
 *,
@@ -30,7 +13,6 @@ body {
   margin: 0;
   font-family: $font-body;
   color: $gray-950;
-  background: $gray-50;
 }
 
 img {

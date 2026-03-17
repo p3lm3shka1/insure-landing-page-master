@@ -1,70 +1,122 @@
-@import "../../../App.scss";
+@import "../../../style/variables";
 
 .hero {
-  background: url("../../images/bg-pattern-intro-desktop.svg") no-repeat;
+  background: $blue-950;
   color: $gray-50;
   position: relative;
-  padding: 6rem 0 8rem;
+  overflow: visible;
+
+  &__media {
+    justify-self: end;
+    width: 100%;
+    max-width: 540px;
+  }
+
+  &__image--desktop {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__image--mobile {
+    display: none;
+  }
 
   &__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
+    min-height: 600px;
+    padding: 6rem 0;
+  }
+
+  &__content {
+    max-width: 540px;
+    z-index: 2;
   }
 
   h1 {
     font-family: $font-heading;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin: 0 0 1rem;
-    line-height: 1;
+    font-size: 4.5rem;
+    line-height: 0.9;
+    margin: 0 0 1.5rem;
   }
 
   p {
-    max-width: 500px;
-    margin-bottom: 2rem;
     line-height: 1.7;
+    margin: 0 0 2rem;
   }
 
-  &__image {
-    width: 100%;
-    max-width: 540px;
-    margin-left: auto;
-  }
-
-  &__pattern {
+  &__bg-left,
+  &__bg-right {
     position: absolute;
     pointer-events: none;
+    z-index: 1;
+  }
 
-    &--left {
-      left: 0;
-      bottom: -180px;
-    }
-    &--right {
-      right: 0;
-      top: 0;
-    }
+  &__bg-left {
+    left: 0;
+    bottom: -300px;
+  }
+
+  &__bg-right {
+    right: 0;
+    top: 0;
   }
 }
 
-@media (max-width: $bp-mobile) {
+@media (max-width: 768px) {
   .hero {
-    padding: 0 0 5rem;
+    overflow: hidden;
 
     &__inner {
       grid-template-columns: 1fr;
-    }
-
-    &__image-wrap {
-      order: -1;
-    }
-    &__image {
+      gap: 0;
+      padding: 0;
+      min-height: auto;
       max-width: 100%;
     }
 
+    &__media {
+      order: 1;
+      display: block;
+      width: 100%;
+    }
+
+    &__image--desktop {
+      display: none;
+    }
+
+    &__image--mobile {
+      display: block;
+      width: 100%;
+    }
+
     &__content {
+      order: 2;
+      max-width: none;
       text-align: center;
-      padding: 3rem 1rem 0;
+      padding: 5rem 1.5rem 5.5rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    &__bg-left {
+      display: none;
+    }
+
+    &__bg-right {
+      display: none;
     }
   }
 }

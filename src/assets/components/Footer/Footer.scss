@@ -1,7 +1,7 @@
-@import "../../../App.scss";
+@import "../../../style/variables.scss";
 
 .footer {
-  background: $gray-950;
+  background: $gray-50;
   padding: 4rem 0 3rem;
   position: relative;
   overflow: hidden;
@@ -10,6 +10,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    pointer-events: none;
   }
 
   &__top {
@@ -28,6 +29,8 @@
     height: 1px;
     background: $gray-700;
     margin: 2rem 0;
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   &__grid {
@@ -39,7 +42,7 @@
   &__col {
     h4 {
       text-transform: uppercase;
-      color: $gray-950;
+      color: $gray-700;
       font-size: 0.8rem;
       letter-spacing: 1px;
       margin-bottom: 2rem;
@@ -58,7 +61,15 @@
       font-weight: 700;
       letter-spacing: 1px;
       font-size: 0.85rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
+  img:hover {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(16%) saturate(1393%)
+      hue-rotate(215deg) brightness(101%) contrast(95%);
   }
 }
 

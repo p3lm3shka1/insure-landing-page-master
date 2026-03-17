@@ -1,14 +1,14 @@
 import "./Footer.scss";
 import Container from "../Layout/Container";
-import footerLinks from "../../data/footerLinks";
+import footerLinks from "../../Data/FooterLinks";
 import FooterLinksColumn from "./FooterLinksColumn";
 
-import logo from "../../assets/images/logo.svg";
-import bgFooter from "../../assets/images/bg-pattern-footer-desktop.svg";
-import iconFacebook from "../../assets/images/icon-facebook.svg";
-import iconTwitter from "../../assets/images/icon-twitter.svg";
-import iconPinterest from "../../assets/images/icon-pinterest.svg";
-import iconInstagram from "../../assets/images/icon-instagram.svg";
+import logo from "../../images/logo.svg";
+import bgFooter from "../../images/bg-pattern-footer-desktop.svg";
+import iconFacebook from "../../images/icon-facebook.svg";
+import iconTwitter from "../../images/icon-twitter.svg";
+import iconPinterest from "../../images/icon-pinterest.svg";
+import iconInstagram from "../../images/icon-instagram.svg";
 
 function Footer() {
   return (

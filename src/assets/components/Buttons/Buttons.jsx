@@ -1,4 +1,4 @@
-import "./Button.scss";
+import "./Buttons.scss";
 
 function Button({ children, variant = "light", className = "", ...props }) {
   return (

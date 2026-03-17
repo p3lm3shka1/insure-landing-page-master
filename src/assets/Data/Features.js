@@ -1,6 +1,6 @@
-import iconSnappy from "../assets/images/icon-snappy-process.svg";
-import iconAffordable from "../assets/images/icon-affordable-prices.svg";
-import iconPeople from "../assets/images/icon-people-first.svg";
+import iconSnappy from "../images/icon-snappy-process.svg";
+import iconAffordable from "../images/icon-affordable-prices.svg";
+import iconPeople from "../images/icon-people-first.svg";
 
 const features = [
   {

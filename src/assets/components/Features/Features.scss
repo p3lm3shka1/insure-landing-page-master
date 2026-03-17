@@ -1,4 +1,4 @@
-@import "../../../App.scss";
+@import "../../../style/variables.scss";
 
 .features {
   padding: 18rem 0 8rem;
@@ -36,6 +36,9 @@
 
     &__grid {
       grid-template-columns: 1fr;
+    }
+    img {
+      margin: 0 auto;
     }
   }
 }

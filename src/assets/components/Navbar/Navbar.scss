@@ -1,4 +1,4 @@
-@import "../../../App.scss";
+@import "../../../style/variables";
 
 .navbar {
   position: sticky;
@@ -24,6 +24,10 @@
       font-weight: 700;
       letter-spacing: 1px;
       font-size: 0.85rem;
+
+      &:hover {
+        color: $blue-950;
+      }
     }
   }
 
@@ -48,7 +52,7 @@
     }
   }
 
-  .mobile-menu {
+  .navbar__mobile-menu {
     display: block;
     position: absolute;
     inset: 80px 0 auto 0;
@@ -76,11 +80,22 @@
     &__btn {
       width: min(100%, 320px);
     }
-    &__bg {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
+  }
+  .navbar__mobile-menu__pattern {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .navbar__mobile-menu__links {
+    padding: 4rem 1.5rem;
+  }
+  .navbar__mobile-menu__pattern {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
   }
 }
